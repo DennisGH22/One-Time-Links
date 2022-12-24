@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+:root {
+  --nav-color: #06283D;
+  --body-clr-background: #DFF6FF;
+  --h1-clr: #2C3639;
+  --btn-clr: #47B5FF;
+  --btn-clr-hover: #256D85;
+  --clr-black: #000;
+  --toast-clr-success: #00FFD1;
+  --clr-danger: #C21010;
+  --clr-skeleton: rgba(127, 132, 135, .25);
+}
+
+#app {
+  height: 100vh;
+}
+
+h1 {
+  color: var(--h1-clr);
+  font-weight: bold;
+}
+
+label {
+  color: var(--h1-clr);
+}
+
+textarea {
+  background-color: transparent;
+  resize: none;
+  border-radius: 10px;
+  border-color: var(--nav-color);
+  max-width: 90%;
+}
+
+textarea:focus {
+  border-color: var(--nav-color);
+  outline: none;
+}
+
+b {
+  font-weight: bold;
+  color: var(--clr-danger);
+}
+
+body {
+  background-color: var(--body-clr-background);
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+}
