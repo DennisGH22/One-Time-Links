@@ -16,11 +16,11 @@ const corsOptions = {
 }
 
 const limiter = rateLimit({
-	windowMs: 2 * 60 * 1000,
-	max: 10,
-	standardHeaders: true,
-	legacyHeaders: false,
-})
+    windowMs: 2 * 60 * 1000,
+    max: 10,
+    standardHeaders: true,
+    legacyHeaders: false,
+});
 
 app.use(express.json());
 app.use(cors(corsOptions));
