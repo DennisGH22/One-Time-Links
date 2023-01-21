@@ -1,5 +1,6 @@
 <script lang="ts">
 import axios from "axios";
+import DOMPurify from 'dompurify';
 
 export default {
     name: "contentData",
@@ -26,7 +27,7 @@ export default {
                 const pathname = location.pathname.replace("/", "");
                 const response = await axios.get("http://localhost:3000/fetch", {
                     params: {
-                        uniqueID: pathname,
+                        uniqueID: DOMPurify().sanitize(pathname),
                     }
                 });
                 const data = await response.data;
@@ -34,7 +35,7 @@ export default {
                 
                 await axios.delete("http://localhost:3000/delete", {
                     params: {
-                        uniqueID: pathname,
+                        uniqueID: DOMPurify().sanitize(pathname),
                     }
                 });
             } catch(error) {
