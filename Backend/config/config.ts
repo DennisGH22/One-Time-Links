@@ -3,10 +3,10 @@ import { randomBytes } from 'crypto';
 import { Buffer } from 'buffer';
 
 let config = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "db name"
+    host: process.env.HOST_ID,
+    user: process.env.USER_ID,
+    password: process.env.USER_KEY,
+    database: process.env.DB_ID
 });
 
 config.connect((error) => {
