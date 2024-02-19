@@ -115,7 +115,7 @@ nav {
   border-radius: 0;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  padding-inline-end: 28px;
+  padding-inline-end: 36px;
   margin-block-end: 45px;
 }
 
@@ -153,7 +153,7 @@ button:disabled:hover {
   border-bottom-right-radius: 5px;
   padding-block: 8.7px;
   padding-inline: 8.7px;
-  margin-block-start: 19px;
+  margin-block-start: 10px;
   width: 200px;
 }
 
