@@ -79,7 +79,7 @@ export default {
     <div class="info">
         <editor
           v-model="secretData"
-		  api-key="4yo2wemt9d0gs4wberczm7tf767iok2rryf15mp9u68ix3bn"
+		  api-key="YOUR_KEY"
           :init="{
               height: '280',
               menubar: false,
