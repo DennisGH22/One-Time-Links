@@ -32,7 +32,7 @@ nav {
 .step {
   display: flex;
   margin-block-start: 30px;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
@@ -57,6 +57,7 @@ nav {
 .step p {
   padding-inline-start: 10px;
   color: var(--h1-clr);
+  text-align: start;
 }
 
 .info {
