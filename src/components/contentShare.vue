@@ -26,7 +26,7 @@ export default {
       try {
         this.disabled = "disabled";
         this.uniqueLink = (uuidv4());
-        const post = await axios.post("https://one-time-link.onrender.com:10000/share", {
+        const post = await axios.post("http://localhost:3000/share", {
           data: DOMPurify().sanitize(this.secretData, { USE_PROFILES: { html: false } }),
           data_permalink: this.uniqueLink
         });
@@ -79,7 +79,7 @@ export default {
     <div class="info">
         <editor
           v-model="secretData"
-		  api-key="YOUR_KEY"
+		  api-key="4yo2wemt9d0gs4wberczm7tf767iok2rryf15mp9u68ix3bn"
           :init="{
               height: '280',
               menubar: false,
