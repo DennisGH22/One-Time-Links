@@ -26,7 +26,7 @@ export default {
       try {
         this.disabled = "disabled";
         this.uniqueLink = (uuidv4());
-        const post = await axios.post("http://localhost:3000/share", {
+        const post = await axios.post("https://one-time-link.onrender.com:10000/share", {
           data: DOMPurify().sanitize(this.secretData, { USE_PROFILES: { html: false } }),
           data_permalink: this.uniqueLink
         });

@@ -25,7 +25,7 @@ export default {
         async fetchData() {
             try {
                 const pathname = location.pathname.replace("/", "");
-                const response = await axios.get("http://localhost:3000/fetch", {
+                const response = await axios.get("https://one-time-link.onrender.com:10000/fetch", {
                     params: {
                         uniqueID: DOMPurify().sanitize(pathname),
                     }
@@ -33,7 +33,7 @@ export default {
                 const data = await response.data;
                 this.sensitive = data.data;
                 
-                await axios.delete("http://localhost:3000/delete", {
+                await axios.delete("https://one-time-link.onrender.com:10000/delete", {
                     params: {
                         uniqueID: DOMPurify().sanitize(pathname),
                     }
