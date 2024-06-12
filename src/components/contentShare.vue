@@ -79,6 +79,7 @@ export default {
     <div class="info">
         <editor
           v-model="secretData"
+		  api-key=VITE_TINYMCE_KEY
           :init="{
               height: '280',
               menubar: false,
